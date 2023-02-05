@@ -1,0 +1,48 @@
+.btn {
+    position: relative;
+    font-family: Lato;
+    font-size: var(--font-size-s);
+    line-height: 20px;
+    background: var(--orange);
+    font-weight: var(--font-weight-l);
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    flex: none;
+    color: var(--soft-grey);
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.btn.outlined {
+    background: var(--soft-brown);
+    border-color: var(--dark-brown);
+    color: var(--dark-brown);
+}
+
+.btn.small {
+    padding: 6px 10px;
+    background-color: var(--dark-brown);
+    color: var(--soft-grey);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: white;
+    opacity: 0.2;
+	transition: all 1s ease;
+}
+
+.btn:hover:before {
+	width: 100%;
+}
+

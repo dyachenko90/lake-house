@@ -1,0 +1,30 @@
+:root {
+    --min-widht: 320px;
+    --max-width: 1440px;
+    --height: 72px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    --side: minmax(16px, 1fr);
+    --content: minmax(var(--min-widht), var(--max-width));
+
+    display: grid;
+    grid-template-columns: 
+        var(--side) 
+        var(--content) 
+        var(--side);
+}
+
+.grid-content {
+    grid-column: 2 / 3;
+}
+
+.grid-content-full {
+    grid-column: 1 / -1;
+}

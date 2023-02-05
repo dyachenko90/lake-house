@@ -1,0 +1,291 @@
+body {
+    background-color: var(--soft-grey);
+    color: var(--dark-grey);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    height: 720px;
+    background-image: url('../assets/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    color: var(--soft-grey);
+    padding-top: var(--height);
+}
+
+.hero-title {
+    width: 769px;
+    padding-top: 72px;
+    font-size: var(--font-size-l);
+}
+
+.about-container {
+    background-color: var(--soft-brown);
+}
+
+.about-content {
+    padding: 96px 0;
+    gap: 32px;
+}
+
+.about-container .about-content {
+    display: grid;
+    grid-template-areas: "image text";
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto;
+} 
+
+.about-container .lake {
+    grid-area: image;
+    max-width: 320px;
+    object-fit: cover;
+}
+
+.about-container .about-descriptions {
+    grid-area: text;
+    columns: 2;
+    max-width: 100%;
+    max-height: 300px;
+    gap: 24px;
+}
+
+.about-container .divider {
+    grid-area: text;
+    align-self: end;
+    justify-self: end;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background-color: var(--orange);
+    border: none;
+}
+
+.description {
+    margin-bottom: 32px;
+}
+
+.description:nth-child(3) {
+    margin-bottom: 0;
+}
+
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 96px 0;
+}
+
+.section-content .main-title {
+    width: 998px;
+}
+
+.illustration {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.arrangements, .hurry-up {
+    background-color: var(--soft-brown);
+}
+
+.arrangements-section {
+    padding: 96px 0;
+    gap: 72px;
+}
+
+.header-arrangements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-sm {
+    max-width: 395px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+
+}
+
+.header-arrangements .center {
+    text-align: center;
+}
+
+.arrangements-description, 
+.features-description {
+    max-width: 592px;
+}
+
+.arrangements-list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    padding-top: 72px;
+}
+
+.arrangements-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 386px;
+
+}
+
+.section-features {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 96px 0;
+    gap: 48px;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 187px;
+}
+
+.features-list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.benefits-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center; 
+    gap: 80px;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 20px;
+}
+
+.benefits-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.title-lg {
+    max-width: 794px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.hurry-up-description {
+    max-width: 794px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-section {
+    background-color: var(--dark-brown);
+    color: var(--soft-grey);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 96px 0;
+
+} 
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+}
+
+.contact > address, 
+.contact > a, 
+.form-header .footer-description {
+   color: var(--soft-grey);
+}
+
+.footer-description {
+    max-width: 584px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact {
+    display: flex;
+    gap: 8px;
+}
+
+.social {
+    gap: 24px;
+}
+
+.email-container {
+    position: relative;
+}
+
+.email-container .btn {
+    position: absolute;
+    top: -8px;
+    right: 8px;
+}
+
+.email {
+    font-size: var(--font-size-s);
+    border: 1px solid var(--dark-brown);
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+}
+
+.legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 96px;
+}
+
+
+

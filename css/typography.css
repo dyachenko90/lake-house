@@ -1,0 +1,69 @@
+:root {
+    /*Font size*/
+    --font-size-xs: 14px;
+    --font-size-s: 16px;
+    --font-size-m: 32px;
+    --font-size-l: 40px;
+    --font-size-xl: 80px;
+
+    /*Font weight*/
+    --font-weight-s: 300;
+    --font-weight-m: 400;
+    --font-weight-l: 500;
+    --font-weight-xl: 700;
+}
+
+.heading-lg {
+    font-family: Merriweather;
+    font-weight: var(--font-weight-xl);
+    font-size: var(--font-size-xl);
+    color: var(--dark-brown);
+    text-align: center;
+    line-height: 96px;
+}
+
+
+.heading-sm {
+    font-family: Merriweather;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-m);
+    color: var(--dark-grey);
+    line-height: 40px;
+}
+
+.heading-xs {
+    font-family: Lato;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-l);
+    line-height: 20px;
+    text-align: center;
+    font-style: normal;
+}
+
+.body-lg {
+    font-family: Lato;
+    color: var(--light-grey);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-s);
+    line-height: 24px;
+    text-align: left;
+}
+
+.body-md {
+    font-family: Lato;
+    color: var(--light-grey);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-s);
+    line-height: 20px;
+    text-align: left;
+}
+
+.body-md-bold {
+    font-family: Lato;
+    color: var(---grey);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-l);
+    line-height: 20px;
+    text-align: left;
+}
+
